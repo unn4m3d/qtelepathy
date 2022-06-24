@@ -1,0 +1,9 @@
+/home/unn4m3d/Projects/qtelepathy/build/CMakeFiles/qtelepathy_static.dir
+/home/unn4m3d/Projects/qtelepathy/build/CMakeFiles/test1.dir
+/home/unn4m3d/Projects/qtelepathy/build/CMakeFiles/test.dir
+/home/unn4m3d/Projects/qtelepathy/build/CMakeFiles/edit_cache.dir
+/home/unn4m3d/Projects/qtelepathy/build/CMakeFiles/rebuild_cache.dir
+/home/unn4m3d/Projects/qtelepathy/build/CMakeFiles/qtelepathy_static_autogen_timestamp_deps.dir
+/home/unn4m3d/Projects/qtelepathy/build/CMakeFiles/qtelepathy_static_autogen.dir
+/home/unn4m3d/Projects/qtelepathy/build/CMakeFiles/test1_autogen_timestamp_deps.dir
+/home/unn4m3d/Projects/qtelepathy/build/CMakeFiles/test1_autogen.dir

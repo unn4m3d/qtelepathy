@@ -1,0 +1,48 @@
+Start testing: Jun 23 21:48 +10
+----------------------------------------------------------
+1/1 Testing: test
+1/1 Test: test
+Command: "/home/unn4m3d/Projects/qtelepathy/build/test1"
+Directory: /home/unn4m3d/Projects/qtelepathy/build
+"test" start time: Jun 23 21:48 +10
+Output:
+----------------------------------------------------------
+********* Start testing of TestIPC *********
+Config: Using QtTest library 5.15.3, Qt 5.15.3 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 11.2.0), ubuntu 22.04
+PASS   : TestIPC::initTestCase()
+Zaloopa i pupa
+QWARN  : TestIPC::t1() QObject::connect: No such signal QLocalSocket::deleteLater() in /home/unn4m3d/Projects/qtelepathy/qtelepathy.cpp:17
+QDEBUG : TestIPC::t1() Connecting man
+
+=== Received signal at function time: 300000ms, total time: 300000ms, dumping stack ===
+GNU gdb (Ubuntu 12.0.90-0ubuntu1) 12.0.90
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+Attaching to process 92386
+(gdb) === End of stack trace ===
+QFATAL : TestIPC::t1() Test function timed out
+FAIL!  : TestIPC::t1() Received a fatal error.
+   Loc: [Unknown file(0)]
+Totals: 1 passed, 1 failed, 0 skipped, 0 blacklisted, 300054ms
+********* Finished testing of TestIPC *********
+<end of output>
+Test time = 300.14 sec
+----------------------------------------------------------
+Test Failed.
+"test" end time: Jun 24 10:23 +10
+"test" time elapsed: 00:05:00
+----------------------------------------------------------
+
+End testing: Jun 24 10:23 +10

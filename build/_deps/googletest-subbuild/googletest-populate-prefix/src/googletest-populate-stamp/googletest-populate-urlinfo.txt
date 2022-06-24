@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/bin/cmake;-P;/home/unn4m3d/Projects/qtelepathy/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/unn4m3d/Projects/qtelepathy/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/verify-googletest-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/unn4m3d/Projects/qtelepathy/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/extract-googletest-populate.cmake
+source_dir=/home/unn4m3d/Projects/qtelepathy/build/_deps/googletest-src
+work_dir=/home/unn4m3d/Projects/qtelepathy/build/_deps
+url(s)=https://github.com/google/googletest/archive/e2239ee6043f73722e7aa812a459f54a28552929.zip
+hash=
+no_extract=
+

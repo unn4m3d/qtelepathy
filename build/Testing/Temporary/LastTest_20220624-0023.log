@@ -1,0 +1,24 @@
+Start testing: Jun 24 17:50 +10
+----------------------------------------------------------
+1/1 Testing: test
+1/1 Test: test
+Command: "/home/unn4m3d/Projects/qtelepathy/build/test1"
+Directory: /home/unn4m3d/Projects/qtelepathy/build
+"test" start time: Jun 24 17:50 +10
+Output:
+----------------------------------------------------------
+********* Start testing of TestIPC *********
+Config: Using QtTest library 5.15.3, Qt 5.15.3 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 11.2.0), ubuntu 22.04
+PASS   : TestIPC::initTestCase()
+PASS   : TestIPC::cleanupTestCase()
+Totals: 2 passed, 0 failed, 0 skipped, 0 blacklisted, 0ms
+********* Finished testing of TestIPC *********
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test" end time: Jun 24 17:50 +10
+"test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 24 17:50 +10
