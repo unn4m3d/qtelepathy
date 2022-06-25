@@ -30,6 +30,7 @@ namespace qtelepathy
         Q_SLOT void connectToServer(QString serverName);
 
         void wait();
+        void waitWritten();
 
         Q_SLOT void waitForever();
     private:

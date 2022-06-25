@@ -101,6 +101,11 @@ void Socket::waitForever()
     while(true) wait();
 }
 
+void Socket::waitWritten()
+{
+    while(!m_socket->waitForBytesWritten());
+}
+
 Server::Server():
     m_server(new QLocalServer)
 {
