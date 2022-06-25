@@ -18,6 +18,7 @@ public Q_SLOTS:
             QJsonObject payload;
             payload.insert("bar", "baz");
             ptr->transmit("foo", payload);
+            connect(ptr, &qtelepathy::Socket::disconnected, ptr, &qtelepathy::Socket::deleteLater);
         });
         srv.listen(srv_name);
 

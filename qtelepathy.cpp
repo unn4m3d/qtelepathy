@@ -106,7 +106,7 @@ void Server::listen(QString serverName)
 
 void Server::connection()
 {
-    Q_EMIT newConnection(std::make_shared<Socket>(m_server));
+    Q_EMIT newConnection(new Socket(m_server));
 }
 
 void Server::wait()
