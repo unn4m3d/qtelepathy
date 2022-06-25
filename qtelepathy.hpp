@@ -46,7 +46,7 @@ namespace qtelepathy
 
         Server& operator=(const Server&) = delete;
 
-        Q_SIGNAL void newConnection(std::shared_ptr<Socket>);
+        Q_SIGNAL void newConnection(Socket*);
         void listen(QString name);
         ~Server() { qDebug() << "~Server()"; }
         void wait();
