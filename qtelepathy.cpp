@@ -96,6 +96,11 @@ void Socket::wait()
     m_socket->waitForReadyRead();
 }
 
+void Socket::waitForever()
+{
+    while(true) wait();
+}
+
 Server::Server():
     m_server(new QLocalServer)
 {

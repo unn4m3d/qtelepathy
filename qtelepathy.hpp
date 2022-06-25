@@ -30,6 +30,8 @@ namespace qtelepathy
         Q_SLOT void connectToServer(QString serverName);
 
         void wait();
+
+        Q_SLOT void waitForever();
     private:
         Q_SLOT void read();
         QByteArray m_buffer;
