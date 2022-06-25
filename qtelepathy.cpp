@@ -91,6 +91,11 @@ void Socket::transmit(QString message, QJsonObject payload)
     m_socket->flush();
 }
 
+void Socket::wait()
+{
+    m_socket->waitForReadyRead();
+}
+
 Server::Server():
     m_server(new QLocalServer)
 {

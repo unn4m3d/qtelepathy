@@ -28,6 +28,8 @@ namespace qtelepathy
         Q_SLOT void transmit(QString topic, QJsonObject payload);
         Q_SLOT void transmitData(QByteArray arr);
         Q_SLOT void connectToServer(QString serverName);
+
+        void wait();
     private:
         Q_SLOT void read();
         QByteArray m_buffer;
