@@ -4,7 +4,9 @@
 using namespace qtelepathy;
 
 Socket::Socket(QLocalServer* server) :
-    m_socket(server->nextPendingConnection())
+    m_socket(server->nextPendingConnection()),
+    m_blockSize(0),
+    m_received(0)
 {
     connect(m_socket, SIGNAL(disconnected()), this, SIGNAL(disconnected()));
     connect(m_socket, SIGNAL(readyRead()), this, SLOT(read()));
@@ -13,7 +15,9 @@ Socket::Socket(QLocalServer* server) :
 
 Socket::Socket(QObject* parent) :
     QObject(parent),
-    m_socket(new QLocalSocket(this))
+    m_socket(new QLocalSocket(this)),
+    m_blockSize(0),
+    m_received(0)
 {
     connect(m_socket, SIGNAL(disconnected()), this, SIGNAL(disconnected()));
     connect(m_socket, SIGNAL(disconnected()), m_socket, SLOT(deleteLater()));
