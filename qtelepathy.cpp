@@ -8,6 +8,7 @@ Socket::Socket(QLocalServer* server) :
 {
     connect(m_socket, SIGNAL(disconnected()), this, SIGNAL(disconnected()));
     connect(m_socket, SIGNAL(readyRead()), this, SLOT(read()));
+    connect(m_socket, &QLocalSocket::stateChanged, this, &Socket::stateChanged);
 }
 
 Socket::Socket(QObject* parent) :
@@ -17,6 +18,7 @@ Socket::Socket(QObject* parent) :
     connect(m_socket, SIGNAL(disconnected()), this, SIGNAL(disconnected()));
     connect(m_socket, SIGNAL(disconnected()), m_socket, SLOT(deleteLater()));
     connect(m_socket, SIGNAL(readyRead()), this, SLOT(read()));
+    connect(m_socket, &QLocalSocket::stateChanged, this, &Socket::stateChanged);
 }
 
 void Socket::connectToServer(QString name)

@@ -32,6 +32,7 @@ namespace qtelepathy
         void setServerName(QString);
         void wait();
         void waitWritten();
+        Q_SIGNAL void stateChanged(QLocalSocket::LocalSocketState);
 
         Q_SLOT void waitForever();
     private:
