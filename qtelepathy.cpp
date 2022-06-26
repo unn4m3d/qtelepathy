@@ -10,8 +10,9 @@ Socket::Socket(QLocalServer* server) :
     connect(m_socket, SIGNAL(readyRead()), this, SLOT(read()));
 }
 
-Socket::Socket() :
-    m_socket(new QLocalSocket())
+Socket::Socket(QObject* parent) :
+    QObject(parent),
+    m_socket(new QLocalSocket(this))
 {
     connect(m_socket, SIGNAL(disconnected()), this, SIGNAL(disconnected()));
     connect(m_socket, SIGNAL(disconnected()), m_socket, SLOT(deleteLater()));

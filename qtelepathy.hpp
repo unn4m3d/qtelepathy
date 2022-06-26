@@ -18,7 +18,7 @@ namespace qtelepathy
         Q_OBJECT
     public:
         Socket(QLocalServer*);
-        Socket();
+        Socket(QObject* parent = nullptr);
         Socket(const Socket&) = delete;
         
         Socket& operator=(const Socket&) = delete;
