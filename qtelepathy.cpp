@@ -106,7 +106,13 @@ void Socket::waitForever()
 
 void Socket::waitWritten()
 {
-    while(!m_socket->waitForBytesWritten());
+    while(!m_socket->waitForBytesWritten())
+    {
+        if(m_socket->state() == QLocalSocket::UnconnectedState)
+        {
+            break;
+        }
+    }
 }
 
 void Socket::connectAndWait()
