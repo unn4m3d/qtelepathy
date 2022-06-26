@@ -128,3 +128,8 @@ void Server::wait()
 {
     m_server->waitForNewConnection();
 }
+
+void Server::waitForever()
+{
+    while(true) wait();
+}
