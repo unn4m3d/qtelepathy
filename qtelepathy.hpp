@@ -46,7 +46,7 @@ namespace qtelepathy
     {
         Q_OBJECT
     public:
-        Server();
+        Server(QObject* parent = nullptr);
         Server(const Server&) = delete;
 
         Server& operator=(const Server&) = delete;

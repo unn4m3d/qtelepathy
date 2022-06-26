@@ -117,8 +117,9 @@ void Socket::setServerName(QString str)
     m_serverName = str;
 }
 
-Server::Server():
-    m_server(new QLocalServer)
+Server::Server(QObject* parent) :
+    QObject(parent),
+    m_server(new QLocalServer(this))
 {
 }
 
