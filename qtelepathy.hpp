@@ -55,6 +55,7 @@ namespace qtelepathy
         void listen(QString name);
         ~Server() { qDebug() << "~Server()"; }
         void wait();
+        void wait(int ms);
         Q_SLOT void waitForever();
     private:
         Q_SLOT void connection();

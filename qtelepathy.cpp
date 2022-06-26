@@ -141,6 +141,11 @@ void Server::wait()
     m_server->waitForNewConnection();
 }
 
+void Server::wait(int ms)
+{
+    m_server->waitForNewConnection(ms);
+}
+
 void Server::waitForever()
 {
     while(true) wait();
