@@ -106,6 +106,17 @@ void Socket::waitWritten()
     while(!m_socket->waitForBytesWritten());
 }
 
+void Socket::connectAndWait()
+{
+    connectToServer(m_serverName);
+    waitForever();
+}
+
+void Socket::setServerName(QString str)
+{
+    m_serverName = str;
+}
+
 Server::Server():
     m_server(new QLocalServer)
 {

@@ -28,7 +28,8 @@ namespace qtelepathy
         Q_SLOT void transmit(QString topic, QJsonObject payload);
         Q_SLOT void transmitData(QByteArray arr);
         Q_SLOT void connectToServer(QString serverName);
-
+        Q_SLOT void connectAndWait();
+        void setServerName(QString);
         void wait();
         void waitWritten();
 
@@ -38,6 +39,7 @@ namespace qtelepathy
         QByteArray m_buffer;
         QLocalSocket* m_socket;
         packet_size_t m_blockSize, m_received;
+        QString m_serverName;
     };
 
     class Server : public QObject
