@@ -60,7 +60,6 @@ void Socket::read()
 
         if(m_received == m_blockSize)
         {
-            std::cerr << "Receive :" << QString::fromLocal8Bit(m_buffer.toHex()).toStdString() << std::endl;
             m_blockSize = 0;
             QJsonParseError err;
             auto doc = QJsonDocument::fromJson(m_buffer, &err);
@@ -87,7 +86,6 @@ void Socket::transmitData(QByteArray arr)
     QDataStream out(m_socket);
     out.setVersion(QDataStream::Qt_5_3);
     out << packet_size_t(arr.length()) << arr;
-    std::cerr << "Transmit :" << QString::fromLocal8Bit(arr.toHex()).toStdString() << std::endl;
 }
 
 void Socket::transmit(QString message, QJsonObject payload)
